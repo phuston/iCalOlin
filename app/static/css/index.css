@@ -1,7 +1,11 @@
+.nav {
+  background-color: dimgray;
+}
+
 .nav a {
-  color: black;
+  color: white;
   font-size: 11px;
-  font-weight: bold;
+  font-weight: bold
   padding: 14px 10px;
   text-transform: uppercase;
 }
@@ -12,27 +16,50 @@
 
 .jumbotron {
   background-image:url('/static/img/jumboBack.png');
-  background-size: 5rem 5rem;
+  background-size: 2rem 3rem;
   background-color: #FF8533;
-  height: 55rem;
+  height: 30rem;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: right;
+  background-position: center;
   }
 
 .jumbotron .container {
   position: relative;
-  top:10rem;
+  left:5rem;
+  top:1rem;
 }
 
 .jumbotron h1 {
   color: black;
-  font-size: 48px;  
+  font-size: 55px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
 }
 
-.jumbotron p {
-  font-size: 20px;
+.inputForm {
+  background-color:black;
+  height: 40rem;
+}
+
+.inputForm p {
+  font-size: 30px;
+  color: white;
+}
+
+.inputForm .container {
+  position: relative;
+  top:1rem;
+}
+
+.inputForm h1 {
+  color: white;
+  font-size: 15px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.inputForm p {
+  font-size: 30px;
   color: black;
 }
