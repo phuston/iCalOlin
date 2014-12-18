@@ -1,0 +1,38 @@
+.nav a {
+  color: black;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image:url('/static/img/jumboBack.png');
+  background-size: 5rem 5rem;
+  background-color: #FF8533;
+  height: 55rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  }
+
+.jumbotron .container {
+  position: relative;
+  top:10rem;
+}
+
+.jumbotron h1 {
+  color: black;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: black;
+}
