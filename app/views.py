@@ -1,6 +1,7 @@
 from app import app
 from flask import render_template, flash, redirect, session, url_for, request, g
 from .forms import loginForm
+from .controllers import Emailer, Formatter, GetHTML, iCalCreation
 
 @app.route('/', methods=['GET', 'POST'])
 @app.route('/index', methods=['GET', 'POST'])
@@ -10,12 +11,12 @@ def index():
     email = None
     form = loginForm()
     if form.validate_on_submit():
-    	username = form.username.data
-        password = form.password.data
+        html_sched = GetHTML.html_handle(form.username.data,form.password.data)a
         email = form.email.data
         form.username.data = ''
         form.password.data = ''
         form.email.data = ''
+        #Here is where iCal creation and emailing should happen
     return render_template('index.html', form=form)
 
 

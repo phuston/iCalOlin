@@ -2,6 +2,7 @@
 import Formatter
 import Emailer
 import random
+
 ical = open('OliniCalendar.ics','w')
 
 # Importing all the names of different things because this is what made sense at the time
