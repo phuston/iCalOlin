@@ -13,42 +13,42 @@ def index():
     form = loginForm()
     if form.validate_on_submit():
         course_info = GetHTML.htmlHandle(form.username.data,form.password.data)
-        return course_info
+        print(course_info)
 
-    #     timesold = course_info[2]
-    #     names = course_info[1]
-    #     course_info[2] = Formatter.formatTimes(course_info[2])
-    #     sdates = {'M':'26','T':'20','W':'21','R':'22','F':'23'}
+        timesold = course_info[2]
+        names = course_info[1]
+        course_info[2] = Formatter.formatTimes(course_info[2])
+        sdates = {'M':'26','T':'20','W':'21','R':'22','F':'23'}
 
-    #     snames = {}
+        snames = {}
 
-    #     for i in range(len(timesold)):
-    #         snames[names[i]] = len(timesold[i])
+        for i in range(len(timesold)):
+            snames[names[i]] = len(timesold[i])
 
-    #     dnames = {}
+        dnames = {}
 
-    #     k = 0
-    #     for j in range(7):
-    #         for i in range(snames[names[j]]):
-    #             dnames[k] = names[j]
-    #             k += 1
+        k = 0
+        for j in range(7):
+            for i in range(snames[names[j]]):
+                dnames[k] = names[j]
+                k += 1
 
-    #     filename = 'OliniCalendar.ics'
+        filename = 'OliniCalendar.ics'
 
-    #     iCalCreation.iCalWrite(course_info[2],"201501","20150430T000000",sdates,dnames,filename)
+        iCalCreation.iCalWrite(course_info[2],"201501","20150430T000000",sdates,dnames,filename)
 
-    #     ical = open('OliniCalendar.ics','r')
+        ical = open('OliniCalendar.ics','r')
 
-    #     email = form.email.data
-    #     Emailer.iCalCreator(email,ical)
+        email = form.email.data
+        Emailer.iCalCreator(email,ical)
 
-    #     os.remove('OliniCalendar.ics')
-    #     # return render_template(html_sched)
+        os.remove('OliniCalendar.ics')
+        # return render_template(html_sched)
         
-    #     form.username.data = ''
-    #     form.password.data = ''
-    #     form.email.data = ''
-    #     #Here is where iCal creation and emailing should happen
+        form.username.data = ''
+        form.password.data = ''
+        form.email.data = ''
+
     return render_template('index.html', form=form)
 
 
