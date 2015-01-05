@@ -3,11 +3,6 @@ from bs4 import BeautifulSoup
 import codecs
 import getpass
 
-USERNAME = str(raw_input("Enter Username:"))
-PASSWORD = getpass.getpass('Password:')
-
-
-
 def htmlHandle(USERNAME, PASSWORD):
 
 	url = 'https://my.olin.edu/ICS/My_StAR/My_Schedule_and_Registration_Info.jnz'
@@ -19,10 +14,6 @@ def htmlHandle(USERNAME, PASSWORD):
 	br["userName"] = USERNAME
 	br["password"] = PASSWORD
 	html = str(br.submit().read())
-
-	#html = open('testhtml.html','w')
-	#html.write(results)
-
 
 	soup = BeautifulSoup(html)
 
@@ -46,8 +37,6 @@ def htmlHandle(USERNAME, PASSWORD):
 		courseLocations.append("Location feature not yet implemented")
 
 	numOfCourses = str(len(courseNames))
-	# print courseNames
-	# print courseTimes
 
 	return [numOfCourses,courseNames,courseTimes,courseLocations]
 
@@ -61,13 +50,11 @@ def formatInfo(numOfCourses,courseNames,courseTimes,courseLocations):
 		info += ("\n")
 		info += (courseLocations[i] + "\n")
 	return info
-
+'''
 htmlResults = htmlHandle(USERNAME,PASSWORD)
 
 num = htmlResults[0]
 names = htmlResults[1]
 times = htmlResults[2]
 locs = htmlResults[3]
-
-#output = formatInfo(num, names, times, locs)
-#print(output)
+'''

@@ -11,14 +11,17 @@ def index():
     email = None
     form = loginForm()
     if form.validate_on_submit():
-        html_sched = GetHTML.html_handle(form.username.data,form.password.data)
-        return render_template(html_sched)
-        email = form.email.data
-        form.username.data = ''
-        form.password.data = ''
-        form.email.data = ''
-        #Here is where iCal creation and emailing should happen
-    #return render_template('index.html', form=form)
+        try:
+            course_info = GetHTML.htmlHandle(form.username.data,form.password.data)
+            # return render_template(html_sched)
+            email = form.email.data
+            form.username.data = ''
+            form.password.data = ''
+            form.email.data = ''
+            #Here is where iCal creation and emailing should happen
+        except:
+            print("oops")
+    return render_template('index.html', form=form)
 
 
 @app.errorhandler(404)

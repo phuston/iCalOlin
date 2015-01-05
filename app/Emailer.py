@@ -46,7 +46,3 @@ def iCalCreator (email, ical):
 	server.sendmail(fromaddr, toaddrs, msg.as_string())
 	server.quit()
 
-#test = open('OliniCalendar.ics','r')
-
-#email = str(raw_input("Enter Email account"))
-#iCalCreator(email, test)

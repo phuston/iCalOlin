@@ -16,3 +16,6 @@ Traceback (most recent call last):
   File "/home/phuston/Olin/iCalOlin/flask/local/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
     raise ValueError('View function did not return a response')
 ValueError: View function did not return a response
+2015-01-04 18:38:42,121 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:16]
+2015-01-04 18:38:42,261 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:16]
+2015-01-04 18:45:38,434 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:16]
