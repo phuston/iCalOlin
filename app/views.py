@@ -49,7 +49,7 @@ def index():
     #     form.password.data = ''
     #     form.email.data = ''
     #     #Here is where iCal creation and emailing should happen
-    # return render_template('index.html', form=form)
+    return render_template('index.html', form=form)
 
 
 @app.errorhandler(404)
