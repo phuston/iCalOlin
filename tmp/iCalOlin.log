@@ -6,3 +6,13 @@
 2014-12-21 02:28:39,688 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:18]
 2014-12-21 02:28:39,828 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:18]
 2014-12-21 02:53:14,844 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:18]
+2015-01-04 18:20:47,155 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:18]
+2015-01-04 18:21:46,135 ERROR: Exception on / [GET] [in /home/phuston/Olin/iCalOlin/flask/local/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/home/phuston/Olin/iCalOlin/flask/local/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/phuston/Olin/iCalOlin/flask/local/lib/python2.7/site-packages/flask/app.py", line 1478, in full_dispatch_request
+    response = self.make_response(rv)
+  File "/home/phuston/Olin/iCalOlin/flask/local/lib/python2.7/site-packages/flask/app.py", line 1566, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
