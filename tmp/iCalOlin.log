@@ -34,3 +34,5 @@ ValueError: View function did not return a response
 2015-01-04 19:04:15,440 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:16]
 2015-01-04 19:04:30,583 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:16]
 2015-01-04 19:04:30,754 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:16]
+2015-01-05 13:23:44,293 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:16]
+2015-01-05 13:23:44,424 INFO: iCalOlin [in /home/phuston/Olin/iCalOlin/app/__init__.py:16]
