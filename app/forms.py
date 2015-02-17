@@ -4,7 +4,7 @@ from wtforms.validators import DataRequired, Length
 
 
 class loginForm(Form):
-    username = StringField('What is your username?')
-    password = PasswordField('What is your password?')
-    email = StringField('What is your preferred email?')
-    submit = SubmitField('Submit')
+    username = StringField(u'What is your username?')
+    password = PasswordField(u'What is your password?')
+    email = StringField(u'What is your preferred email?')
+    submit = SubmitField(u'Submit')

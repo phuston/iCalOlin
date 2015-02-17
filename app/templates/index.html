@@ -4,17 +4,19 @@
   <head>
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
     
-    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/materialize.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/materialize.min.css')}}">
     <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/index.css')}}">
-    
   </head>
 
+
   <body>
+
     <div class="nav">
       <div class="container">
-        <ul class = "pull-left">
+        <ul class = "pull-right">
           <li><a href="#">Home</a></li>
-          <li><a href="help.html">Help</a></li>
+          <li><a href="404.html">Help</a></li>
         </ul>
       </div>
     </div>
@@ -27,26 +29,32 @@
     </div> 
     <div class="inputForm">
       <div class="container">
-      <h1>Step 1. Enter your portal username and password and preferred email address.</h1>
-      <h1>Step 2. Recieve your email, open iCal attachment of your schedule.</h1>
-      <h1>Step 3. Profit.</h1>
-      <form action="" method="post" name="loginForm">
-        {{ form.hidden_tag() }}
-        <p>
-          Please enter your portal username:<br>
-          {{ form.username(size=40) }}<br>
-        </p>
-        <p>
-          Please enter your portal password:<br>
-          {{ form.password(size=40) }}<br>
-        </p>
-        <p>
-          Please enter your preferred email:<br>
-          {{ form.email(size=40) }}<br>
-        </p>
-        <br><br>
-        <p><input type="submit" value="Sign In"></p>
-      </form>
+      <p class = "instructions">Step 1. Enter your portal username, password and email address.</p>
+      <p class = "instructions">Step 2. Receive your email, open iCal attachment of your schedule.</p>
+      <p class = "instructions">Step 3. Profit.</p>
+        <form action="" method="post" name="loginForm">
+          {{ form.hidden_tag() }}
+          <p class = "hint">
+            Portal Username:<br>
+            <div class = "input">
+              {{ form.username(size=40) }}
+            </div>
+          </p>
+          <p class = "hint">
+            Portal Password:<br>
+            <div class = "input">
+              {{ form.password(size=40) }}
+            </div>
+          </p>
+          <p class = "hint">
+            Preferred Email:<br>
+            <div class = "input">
+              {{ form.email(size=40) }}
+            </div>
+          </p>
+          <br>
+          <button class="btn btn waves-effect waves-light indigo darken-1" type="submit" value="Sign In">Submit</button>
+        </form>
       </div>
     </div>
   </body>

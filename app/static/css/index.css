@@ -1,12 +1,13 @@
 .nav {
-  background-color: dimgray;
+  background: #303F9F;
+  overflow: auto;
 }
 
 .nav a {
   color: white;
-  font-size: 11px;
-  font-weight: bold
-  padding: 14px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  padding-right: 2em;
   text-transform: uppercase;
 }
 
@@ -15,36 +16,43 @@
 }
 
 .jumbotron {
-  background-image:url('/static/img/jumboBack.png');
-  background-size: 2rem 3rem;
-  background-color: #FF8533;
-  height: 30rem;
+  background-color: #3F51B5;
+  overflow:auto;
+  height: 13rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   }
 
 .jumbotron .container {
-  position: relative;
+  position: center;
   left:5rem;
   top:1rem;
 }
 
 .jumbotron h1 {
-  color: black;
+  color: #212121;
   font-size: 55px;  
-  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.inputForm .instructions {
+  color: #212121;
+  font-size: 18px;
   font-weight: bold;
 }
 
 .inputForm {
-  background-color:black;
-  height: 40rem;
+  min-height: 600px;
+  height: auto !important;
+  height: 600px;
+  background:#C5CAE9;
+  overflow:auto;
 }
 
-.inputForm p {
-  font-size: 30px;
-  color: white;
+.inputForm .hint {
+  font-size: 15px;
+  color: #212121;
 }
 
 .inputForm .container {
@@ -52,14 +60,13 @@
   top:1rem;
 }
 
-.inputForm h1 {
-  color: white;
-  font-size: 15px;  
-  font-family: 'Shift', sans-serif;
+.inputForm .instructions {
+  color: #212121;
+  font-size: 1em;  
   font-weight: bold;
 }
 
 .inputForm p {
   font-size: 15px;
-  color: dimgray;
+  color: #212121;
 }
