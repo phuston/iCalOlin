@@ -36,6 +36,12 @@
   font-weight: bold;
 }
 
+.jumbotron p {
+  color: #212121;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .inputForm .instructions {
   color: #212121;
   font-size: 18px;

@@ -1,2 +1,31 @@
-<h1>File Not Found</h1>
-<p><a href="/index">Back</a></p>
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/materialize.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/materialize.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/index.css')}}">
+  </head>
+
+
+  <body>
+
+    <div class="nav">
+      <div class="container">
+        <ul class = "pull-right">
+          <li><a href="/index">Home</a></li>
+          <li><a href="/404">Help</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="jumbotron">
+      <div class="container">
+        <h1>NO HELP FOR YOU.</h1>
+        <p>Don't be annoying.</p>
+      </div>
+    </div> 
+  </body>
+</html>
